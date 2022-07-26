@@ -1,0 +1,442 @@
+.Main_root {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.NavBar {
+  width: 100%;
+  height: 70px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid black;
+}
+
+.category {
+  height: 100%;
+  margin-left: 100px;
+  background-color: white;
+  width: 300px;
+  display: flex;
+  justify-content: space-around;
+  color: green;
+  align-items: center;
+}
+
+.cur {
+  display: flex;
+  align-items: center;
+  width: 100px;
+  height: 100%;
+  background-color: white;
+  margin-left: 65%;
+  margin-right: 100px;
+}
+
+.select {
+  margin-right: 5px;
+  width: 32px;
+  border: 0px;
+  outline: none;
+}
+
+.Link {
+  text-decoration: none;
+  color: black;
+}
+
+.bag {
+  position: absolute;
+  margin-top: 1%;
+  left: 50%;
+  cursor: pointer;
+  transform: translate(-50%, -50%);
+}
+
+.main {
+
+  display: grid;
+  grid-template-columns: 33% 33% 34%;
+
+}
+
+.product {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+
+
+}
+
+
+
+.product img {
+  width: 50%;
+  height: 50%;
+  cursor: pointer;
+}
+
+.active {
+  border-bottom: 5px green solid;
+  color: green
+}
+
+.colorBorder {
+  width: 30px;
+  height: 30px;
+  margin-left: 5px;
+  border: 3px solid lightblue;
+}
+
+.blur {
+  filter: blur(10px);
+}
+
+.PDP {
+  position: absolute;
+  width: 100%;
+  height: calc(100% - 70px);
+  display: flex;
+}
+
+.imagesConteiner {
+  margin-top: 50px;
+  width: 160%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.description {
+  margin-top: 70px;
+  width: 100%;
+  width: 100%;
+  justify-self: center;
+
+}
+
+.images {
+  margin-top: 10px;
+  width: 80px;
+  margin-left: 100px;
+  margin-bottom: 5px;
+  height: 80px;
+}
+
+.activeImg {
+  position: absolute;
+  top: 100px;
+  left: 220px;
+  width: 400px;
+  height: 400px;
+
+}
+
+@media (max-width: 1185px) {
+  .images {
+    margin-top: 10px;
+    width: 40px;
+    margin-left: 100px;
+    margin-bottom: 5px;
+    height: 40px;
+  }
+
+  .activeImg {
+    position: absolute;
+    top: 100px;
+    left: 220px;
+    width: 200px;
+    height: 200px;
+
+  }
+}
+
+.descriptionText {
+
+
+  width: 100%;
+  margin-top: 10px;
+}
+
+.amountOfPurchases {
+  width: 15px;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 40%;
+  border: 1px solid black;
+}
+
+
+.atributeHolder {
+  display: flex;
+  flex-direction: column;
+}
+
+.optionsHolder {
+  display: flex;
+  flex-direction: row;
+}
+
+.sizeBox {
+
+  width: 50px;
+  height: 30px;
+  border: 1px solid black;
+  margin-left: 7px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.CartButton {
+  cursor: pointer;
+  width: 40%;
+  height: 5%;
+  font-size: 15px;
+  color: white;
+  border: none;
+  background-color: green;
+
+}
+
+.activeOption {
+  color: white;
+  background-color: black;
+}
+
+.itemHolder {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.goodsHolder {
+  display: flex;
+  flex-direction: column;
+}
+
+.amountHolder {
+  position: relative;
+  margin-right: 100px;
+  width: 20%;
+  height: 100%;
+
+}
+
+.infoHolder {
+  margin-left: 100px;
+  position: relative;
+}
+
+.prev {
+  position: absolute;
+}
+
+.btn {
+  position: absolute;
+  margin-top: 170px;
+  z-index: 1;
+  border: none;
+  outline: none;
+  background-color: white;
+
+}
+
+.next {
+  margin-left: 20px;
+
+}
+
+.cartImages {
+  top: 40px;
+  height: 50%;
+  position: absolute;
+  width: 50%;
+}
+
+.curImg {
+  z-index: 1;
+}
+
+.amountPlus {
+  position: absolute;
+  top: 20px;
+}
+
+.amountMinus {
+  position: absolute;
+
+  top: 200px;
+}
+
+.amountBtn {
+  right: 100px;
+  outline: none;
+  border: none;
+}
+
+.numberOf {
+  position: absolute;
+  right: 110px;
+  top: 100px;
+}
+
+.mimiCart {
+  position: absolute;
+  width: 400px;
+  min-height: 200px;
+  background-color: white;
+  left: 68%;
+  top: 70px;
+  z-index: 2;
+  display: flex;
+}
+
+.total {
+  margin-left: 100px;
+}
+
+.orderButton {
+  background-color: green;
+  color: white;
+  font-size: large;
+  outline: none;
+  border: none;
+  width: 300px;
+  height: 40px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.emptyCart {
+  align-self: center;
+  justify-self: center;
+
+}
+
+.miniCartConteiner {
+  width: 99%;
+  height: 99%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.miniCartItemHolder {
+  display: flex;
+  width: 45%;
+  height: 45%;
+
+}
+
+.miniCartInfoHolder {
+  width: 90%;
+  height: 90%;
+  margin-right: 40px;
+}
+
+.miniCartoptionsHolder {
+  display: flex;
+  flex-direction: row;
+}
+
+.miniCartAmountHolder {
+  width: 100%;
+  height: 100%;
+  position: relative;
+
+}
+
+.miniCartImages {
+  left: 50px;
+  height: 150px;
+  position: absolute;
+  width: 150px;
+}
+
+.mimiCartBtn {
+  position: absolute;
+  top: 150px;
+  left: 100px;
+}
+
+.miniAmountPlus {
+  position: absolute;
+  top: 0;
+}
+
+.miniAmountMinus {
+  position: absolute;
+  top: 112px;
+}
+
+.miniNuvberOf {
+  position: absolute;
+  left: 15px;
+  top: 40px;
+}
+
+.miniNext {
+  position: absolute;
+  top: 150px;
+  left: 135px;
+}
+
+.miniAmountBtn {
+  outline: 0;
+  border: 0;
+}
+
+.pageOpasity {
+  opacity: 0.5;
+}
+
+.miniTotalHolder {
+  display: flex;
+  justify-content: space-between;
+}
+
+.miniViewOrOrderBtn {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.view {
+  outline: 0;
+  border: 2px black solid;
+  color: black;
+  width: 40%;
+  height: 50%;
+  cursor: pointer;
+}
+
+.miniOrder {
+  cursor: pointer;
+  outline: 0;
+  background-color: green;
+  color: white;
+  width: 40%;
+  height: 50%;
+}
+
+.miniemptyCart {
+  margin-left: 100px;
+  align-self: center;
+}
+
+.miniColorBorder {
+  width: 30px;
+  height: 25px;
+  border: 3px solid lightblue;
+}
